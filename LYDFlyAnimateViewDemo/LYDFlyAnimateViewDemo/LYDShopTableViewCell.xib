@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LYDShopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcW-GP-tnz">
+                        <rect key="frame" x="10" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-Sr-tDB">
+                        <rect key="frame" x="280" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Eoh-sN-uXl"/>
+                            <constraint firstAttribute="width" constant="30" id="JUq-fq-xH1"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addBtnDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aRP-ZB-k1u"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scD-ho-mgG">
+                        <rect key="frame" x="230" y="7" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.92549026010000002" green="0.92549026010000002" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Qbs-8c-nhx"/>
+                            <constraint firstAttribute="height" constant="30" id="whf-NE-pzs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        <state key="normal" title="-">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="reduceBtnDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BWr-CJ-jAz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="Cgr-Sr-tDB" secondAttribute="centerY" constant="-0.5" id="4Ih-tG-z9f"/>
+                    <constraint firstAttribute="centerY" secondItem="scD-ho-mgG" secondAttribute="centerY" id="Ebb-q8-qbn"/>
+                    <constraint firstItem="tcW-GP-tnz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FJH-HC-2Rs"/>
+                    <constraint firstItem="Cgr-Sr-tDB" firstAttribute="leading" secondItem="scD-ho-mgG" secondAttribute="trailing" constant="20" id="Nra-lA-9kk"/>
+                    <constraint firstAttribute="trailing" secondItem="Cgr-Sr-tDB" secondAttribute="trailing" constant="10" id="kny-4O-vVF"/>
+                    <constraint firstAttribute="centerY" secondItem="tcW-GP-tnz" secondAttribute="centerY" id="uqV-ic-clZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="Cgr-Sr-tDB" id="Rqd-YF-a9t"/>
+                <outlet property="reduceBtn" destination="scD-ho-mgG" id="9D5-RV-aEV"/>
+                <outlet property="titleLabel" destination="tcW-GP-tnz" id="dWy-EW-A2H"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

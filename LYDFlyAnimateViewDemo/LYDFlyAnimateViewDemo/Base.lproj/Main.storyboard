@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iIL-Ok-4N6">
+                                <rect key="frame" x="120" y="0.0" width="255" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lCS-3M-hb5">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RQq-Nh-NR8"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iIL-Ok-4N6" secondAttribute="bottom" id="LCf-Lw-GtR"/>
+                            <constraint firstItem="iIL-Ok-4N6" firstAttribute="leading" secondItem="lCS-3M-hb5" secondAttribute="trailing" id="Xjo-qG-tcl"/>
+                            <constraint firstAttribute="bottom" secondItem="lCS-3M-hb5" secondAttribute="bottom" id="YvJ-rp-GaX"/>
+                            <constraint firstItem="lCS-3M-hb5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="aae-Lj-79u"/>
+                            <constraint firstItem="lCS-3M-hb5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="if1-ns-XZ1"/>
+                            <constraint firstItem="iIL-Ok-4N6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="oaU-vQ-PsF"/>
+                            <constraint firstAttribute="trailing" secondItem="iIL-Ok-4N6" secondAttribute="trailing" id="odB-Ky-Oks"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainTable" destination="lCS-3M-hb5" id="Nnl-2K-CAl"/>
+                        <outlet property="subTable" destination="iIL-Ok-4N6" id="eBj-Vl-CLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
